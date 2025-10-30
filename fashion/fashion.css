@@ -1,0 +1,140 @@
+/* Hero Section */
+.fashion-hero {
+  position: relative;
+  background: url("images/fashionhero.webp") center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+.fashion-hero .overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 3rem;
+  border-radius: 12px;
+  max-width: 800px;
+}
+
+.fashion-hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.fashion-hero h1 span {
+  color: #ff6b6b;
+}
+
+.fashion-hero p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Fashion Tip Section */
+.fashion-tip {
+  text-align: center;
+  background: #f8f8f8;
+  padding: 3rem 1rem;
+  margin-top: 2rem;
+  border-top: 3px solid #ff6b6b;
+}
+
+.fashion-tip h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.fashion-tip p {
+  font-size: 1.1rem;
+  color: #555;
+  background: #fff;
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Fashion Categories Section */
+.fashion-categories {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.fashion-categories h2 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 2rem;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.category-card {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.category-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.category-card h3 {
+  font-size: 1.4rem;
+  color: #333;
+  margin: 1rem 0 0.5rem;
+}
+
+.category-card p {
+  color: #555;
+  font-size: 1rem;
+  padding: 0 1rem 1rem;
+  line-height: 1.5;
+}
+
+.category-card .btn {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  background: #ff6b6b;
+  color: #fff;
+  padding: 0.7rem 1.4rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.category-card .btn:hover {
+  background: #e85b5b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .fashion-hero h1 {
+    font-size: 2rem;
+  }
+
+  .fashion-hero p {
+    font-size: 1rem;
+  }
+
+  .category-card img {
+    height: 200px;
+  }
+}

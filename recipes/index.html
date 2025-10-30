@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Explore delicious local and international recipes with Altoria." />
+    <title>Recipes | Altoria</title>
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="recipes.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="../index.html">Altoria</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle">☰</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../currency/index.html">Currency Converter</a></li>
+                <li><a href="../weather/index.html">Weather Forecast</a></li>
+                <li><a href="../translator/index.html">Translator</a></li>
+                <li><a href="../health/index.html">Health</a></li>
+                <li><a href="index.html" class="active">Recipes</a></li>
+                <li><a href="../fashion/index.html">Fashion</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="recipes-hero">
+            <div class="overlay">
+                <h1>Delicious <span>Recipes</span></h1>
+                <p>Discover local and international dishes you’ll love to try!</p>
+            </div>
+        </section>
+
+        <!-- Recipes Grid -->
+        <section class="recipes-section">
+            <h2>Holiday & Everyday Recipes</h2>
+            <div class="recipe-grid" id="recipeGrid"></div>
+        </section>
+    </main>
+
+    <!-- Recipe Modal -->
+    <div id="recipeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="recipeTitle"></h2>
+            <p id="recipeIntro"></p>
+
+            <h3>Ingredients:</h3>
+            <ul id="recipeIngredients"></ul>
+
+            <h3>Instructions:</h3>
+            <ol id="recipeInstructions"></ol>
+
+            <h3>Tips & Variations:</h3>
+            <ul id="recipeTips"></ul>
+
+            <h3>FAQs:</h3>
+            <div id="recipeFAQs"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Altoria. All rights reserved.</p>
+        <p>
+            <a href="../about.html">About</a> |
+            <a href="../contact.html">Contact</a> |
+            <a href="#">Privacy Policy</a>
+        </p>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="recipes.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Instantly translate text between multiple languages with Altoria Translator.">
+    <title>Language Translator | Altoria</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="translator.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="../index.html">Altoria</a>
+            </div>
+
+            <div class="menu-toggle" id="menu-toggle">☰</div>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../currency/index.html">Currency Converter</a></li>
+                <li><a href="../weather/index.html">Weather Forecast</a></li>
+                <li><a href="index.html" class="active">Translator</a></li>
+                <li><a href="../health/index.html">Health</a></li>
+                <li><a href="../recipes/index.html">Recipes</a></li>
+                <li><a href="../fashion/index.html">Fashion</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="translator-hero">
+            <div class="overlay">
+                <h1>Language <span>Translator</span></h1>
+                <p>Break barriers — translate message instantly while you type.</p>
+            </div>
+        </section>
+
+        <!-- Translator Section -->
+        <section class="translator-section">
+            <div class="container translator-box">
+                <h2>Translate Text Instantly</h2>
+
+                <div class="translator-controls">
+                    <div class="select-group">
+                        <label for="fromLang">From</label>
+                        <select id="fromLang">
+                            <option value="auto" selected>Auto Detect</option>
+                            <option value="en">English</option>
+                            <option value="es">Spanish</option>
+                            <option value="fr">French</option>
+                            <option value="de">German</option>
+                            <option value="it">Italian</option>
+                            <option value="zh">Chinese</option>
+                            <option value="ja">Japanese</option>
+                            <option value="ar">Arabic</option>
+                            <option value="ru">Russian</option>
+                            <option value="yo">Yoruba</option>
+                        </select>
+                    </div>
+
+                    <button id="swapBtn" title="Swap Languages">⇄</button>
+
+                    <div class="select-group">
+                        <label for="toLang">To</label>
+                        <select id="toLang">
+                            <option value="en">English</option>
+                            <option value="es" selected>Spanish</option>
+                            <option value="fr">French</option>
+                            <option value="de">German</option>
+                            <option value="it">Italian</option>
+                            <option value="zh">Chinese</option>
+                            <option value="ja">Japanese</option>
+                            <option value="ar">Arabic</option>
+                            <option value="ru">Russian</option>
+                            <option value="yo">Yoruba</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="translator-textarea">
+                    <textarea id="inputText" placeholder="Type text to translate..."></textarea>
+                    <textarea id="outputText" placeholder="Translation appears here..." readonly></textarea>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Altoria. All rights reserved.</p>
+        <p>
+            <a href="../about.html">About</a> |
+            <a href="../contact.html">Contact</a> |
+            <a href="#">Privacy Policy</a>
+        </p>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="translator.js"></script>
+</body>
+
+</html>

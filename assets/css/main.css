@@ -287,3 +287,590 @@ footer a:hover {
         font-size: 2rem;
     }
 }
+
+/* --- ABOUT PAGE --- */
+.about-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("../images/about-banner.jpg") center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 6rem 1.5rem;
+}
+
+.about-hero .overlay h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.about-hero span {
+    color: #00bcd4;
+}
+
+.about-hero p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.about-content {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.about-content h2 {
+    color: #0a1d37;
+    margin: 2rem 0 1rem;
+}
+
+.about-content p {
+    color: #444;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.about-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 2rem 1.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+}
+
+.about-card h3 {
+    color: #00bcd4;
+    margin-bottom: 1rem;
+}
+
+/* --- CONTACT PAGE --- */
+.contact-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("../images/contact-banner.jpg") center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 6rem 1.5rem;
+}
+
+.contact-hero span {
+    color: #00bcd4;
+}
+
+.contact-section {
+    padding: 4rem 2rem;
+    background-color: #f7f9fc;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.contact-info h2,
+.contact-form h2 {
+    color: #0a1d37;
+    margin-bottom: 1rem;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    color: #444;
+    margin-bottom: 1rem;
+}
+
+.contact-info li {
+    margin-bottom: 0.7rem;
+}
+
+.social-links a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #00bcd4;
+    font-weight: 600;
+}
+
+.contact-form form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1.2rem;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    color: #333;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: none;
+}
+
+.btn {
+    background-color: #00bcd4;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.6rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #0097a7;
+}
+
+.map-section {
+    text-align: center;
+    padding: 4rem 1.5rem;
+}
+
+.map-placeholder {
+    height: 300px;
+    background: #e0e0e0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #444;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+/* --- CURRENCY CONVERTER PAGE --- */
+.currency-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("../images/currency-banner.jpg") center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 6rem 1.5rem;
+}
+
+.currency-hero span {
+    color: #00bcd4;
+}
+
+.converter-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: #f9fafc;
+}
+
+.converter-box {
+    max-width: 500px;
+    margin: auto;
+    background: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.form-group {
+    flex: 1;
+    text-align: left;
+}
+
+select,
+input {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.result-box {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    background: #e0f7fa;
+    padding: 1rem;
+    border-radius: 6px;
+    color: #00796b;
+    font-weight: bold;
+}
+
+/* --- WEATHER FORECAST PAGE --- */
+.weather-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("../images/weather-banner.jpg") center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 6rem 1.5rem;
+}
+
+.weather-hero span {
+    color: #00bcd4;
+}
+
+.weather-section {
+    padding: 4rem 2rem;
+    background: #f8fafc;
+    text-align: center;
+}
+
+.weather-box {
+    max-width: 500px;
+    margin: auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.weather-box h2 {
+    margin-bottom: 1.5rem;
+    color: #0a1d37;
+}
+
+.weather-result {
+    margin-top: 2rem;
+    background: #e0f7fa;
+    padding: 1.5rem;
+    border-radius: 10px;
+    color: #00796b;
+}
+
+.weather-info p {
+    margin: 0.4rem 0;
+    font-size: 1.05rem;
+}
+
+.hidden {
+    display: none;
+}
+
+/* --- LANGUAGE TRANSLATOR PAGE --- */
+.translator-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("../images/translator-banner.jpg") center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 6rem 1.5rem;
+}
+
+.translator-hero span {
+    color: #f5b914;
+}
+
+.translator-section {
+    padding: 4rem 2rem;
+    background: #f8fafc;
+    text-align: center;
+}
+
+.translator-box {
+    max-width: 700px;
+    margin: auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.translator-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.select-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.select-group label {
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.select-group select {
+    padding: 0.4rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#swapBtn {
+    background: #0a1d37;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 0.8rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#swapBtn:hover {
+    background: #1e3a8a;
+}
+
+.translator-textarea {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.translator-textarea textarea {
+    width: 100%;
+    height: 120px;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    resize: none;
+}
+
+@media (min-width: 768px) {
+    .translator-textarea {
+        flex-direction: row;
+    }
+
+    .translator-textarea textarea {
+        width: 48%;
+    }
+}
+
+/* --- HEALTH PAGE STYLES --- */
+.health-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../images/health-banner.jpg") center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 6rem 2rem;
+}
+
+.health-hero span {
+    color: #00bcd4;
+}
+
+.health-tips {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: #f9fafb;
+}
+
+.health-tips h2 {
+    font-size: 2rem;
+    color: #0a1d37;
+    margin-bottom: 2rem;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.tip-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.tip-card:hover {
+    transform: translateY(-5px);
+}
+
+.tip-card h3 {
+    color: #00bcd4;
+    margin-bottom: 0.8rem;
+}
+
+.bmi-section {
+    background: #e8f5f7;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.bmi-container {
+    max-width: 500px;
+    margin: auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.bmi-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.input-group label {
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.bmi-result {
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* --- RECIPES PAGE STYLES --- */
+.recipes-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("../images/recipes-banner.jpg") center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 6rem 2rem;
+}
+
+.recipes-hero span {
+    color: #f5b914;
+}
+
+.recipes-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #f9fafb;
+}
+
+.recipes-section.alt {
+    background-color: #fff;
+}
+
+.recipes-section h2 {
+    color: #0a1d37;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.recipe-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding-bottom: 1rem;
+    transition: transform 0.3s;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.recipe-card h3 {
+    color: #00bcd4;
+    margin: 1rem 0 0.5rem;
+}
+
+.recipe-card p {
+    padding: 0 1rem;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+/* ===== Converter Spinner & History ===== */
+.spinner {
+    width: 25px;
+    height: 25px;
+    border: 3px solid #ddd;
+    border-top: 3px solid #3fa9f5;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.history {
+    max-width: 500px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.history h3 {
+    color: #1e2a38;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.history ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.history li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+    font-size: 0.95rem;
+}
+
+.history li:last-child {
+    border-bottom: none;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Convert between any world currencies in real time with Altoria Currency Converter.">
+    <title>Currency Converter | Altoria</title>
+
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <!-- Page Specific Styles -->
+    <link rel="stylesheet" href="converter.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="../index.html">Altoria</a>
+            </div>
+
+            <div class="menu-toggle" id="menu-toggle">☰</div>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../weather/index.html">Weather</a></li>
+                <li><a href="../translator/index.html">Translator</a></li>
+                <li><a href="../health/index.html">Health</a></li>
+                <li><a href="../recipes/index.html">Recipes</a></li>
+                <li><a href="../fashion/index.html">Fashion</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="converter">
+            <h1>💱 Currency Converter</h1>
+            <p>Convert between any two currencies in real time.</p>
+
+            <div class="converter-box">
+                <div class="input-group">
+                    <label for="fromCurrency">From:</label>
+                    <select id="from-currency"></select>
+                </div>
+
+                <button id="swap" title="Swap currencies" class="swap-btn">⇄</button>
+
+                <div class="input-group">
+                    <label for="toCurrency">To:</label>
+                    <select id="to-currency"></select>
+                </div>
+            </div>
+
+            <div class="amount-section">
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" placeholder="Enter amount" min="0" step="0.01">
+            </div>
+
+            <button id="convert" class="convert-btn">Convert</button>
+
+            <div id="spinner" class="spinner"></div>
+
+            <div id="result" class="result">
+                <p>Converted amount will appear here.</p>
+            </div>
+
+            <div class="history">
+                <h3>Conversion History</h3>
+                <ul id="historyList"></ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Altoria. All rights reserved.</p>
+        <p>
+            <a href="../about.html">About</a> |
+            <a href="../contact.html">Contact</a> |
+            <a href="#">Privacy Policy</a>
+        </p>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="converter.js"></script>
+</body>
+
+</html>

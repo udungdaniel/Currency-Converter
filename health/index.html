@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Health and wellness awareness, BMI calculator, and daily self-care tips by Altoria.">
+    <title>Health & Wellness | Altoria</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="health.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="../index.html">Altoria</a>
+            </div>
+
+            <div class="menu-toggle" id="menu-toggle">☰</div>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../currency/index.html">Currency Converter</a></li>
+                <li><a href="../weather/index.html">Weather Forecast</a></li>
+                <li><a href="../translator/index.html">Translator</a></li>
+                <li><a href="index.html" class="active">Health</a></li>
+                <li><a href="../recipes/index.html">Recipes</a></li>
+                <li><a href="../fashion/index.html">Fashion</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="health-hero">
+            <div class="overlay">
+                <h1>Health & <span>Self-Care</span></h1>
+                <p>Empower yourself with tips and tools for a healthy lifestyle.</p>
+            </div>
+        </section>
+
+        <!-- Random Health Tip of the Day -->
+        <section class="daily-tip" id="dailyTipSection">
+            <h2>🌿 Health Tip of the Day</h2>
+            <p id="dailyTip">Loading tip...</p>
+        </section>
+
+        <!-- Daily Health Tips -->
+        <section class="health-tips">
+            <h2>Daily Wellness Tips</h2>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <h3>💧 Stay Hydrated</h3>
+                    <p>Drink at least 8 glasses of water daily to keep your body and skin healthy.</p>
+                </div>
+                <div class="tip-card">
+                    <h3>🏃 Exercise Regularly</h3>
+                    <p>Engage in 30 minutes of physical activity every day to improve cardiovascular health.</p>
+                </div>
+                <div class="tip-card">
+                    <h3>🍎 Eat Balanced Meals</h3>
+                    <p>Include fruits, vegetables, and whole grains in your diet for better nutrition.</p>
+                </div>
+                <div class="tip-card">
+                    <h3>🧘 Practice Mindfulness</h3>
+                    <p>Take 5–10 minutes each day to breathe deeply and reduce stress levels.</p>
+                </div>
+                <div class="tip-card">
+                    <h3>😴 Get Enough Sleep</h3>
+                    <p>Aim for 7–8 hours of quality sleep each night to restore your body and mind.</p>
+                </div>
+                <div class="tip-card">
+                    <h3>🧍 Maintain Good Posture</h3>
+                    <p>Keep your back straight and shoulders relaxed to avoid back and neck pain.</p>
+                </div>
+                <div class="tip-card">
+                    <h3>💻 Take Screen Breaks</h3>
+                    <p>Look away from your screen every 20 minutes to protect your eyes and reduce fatigue.</p>
+                </div>
+                <div class="tip-card">
+                    <h3>🧠 Mental Health Matters</h3>
+                    <p>Talk to someone you trust when you feel overwhelmed. You don’t have to face challenges alone.</p>
+                </div>
+                <div class="tip-card">
+                    <h3>🧴 Maintain Good Hygiene</h3>
+                    <p>Wash your hands regularly and practice personal hygiene to prevent infections.</p>
+                </div>
+                <div class="tip-card">
+                    <h3>🚭 Avoid Harmful Habits</h3>
+                    <p>Limit alcohol, avoid smoking, and practice moderation in all areas of life.</p>
+                </div>
+                <div class="tip-card">
+                    <h3>🌞 Get Sunlight Safely</h3>
+                    <p>Spend time outdoors for Vitamin D, but use sunscreen to protect your skin.</p>
+                </div>
+                <div class="tip-card">
+                    <h3>💬 Stay Connected</h3>
+                    <p>Maintain positive relationships with family and friends for emotional support and happiness.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- BMI Calculator -->
+        <section class="bmi-section">
+            <div class="bmi-container">
+                <h2>Calculate Your BMI</h2>
+                <p>Check your Body Mass Index to understand your health status.</p>
+
+                <div class="bmi-form">
+                    <div class="input-group">
+                        <label for="weight">Weight (kg):</label>
+                        <input type="number" id="weight" placeholder="Enter your weight">
+                    </div>
+                    <div class="input-group">
+                        <label for="height">Height (cm):</label>
+                        <input type="number" id="height" placeholder="Enter your height">
+                    </div>
+                    <button id="calcBMI" class="btn">Calculate BMI</button>
+                </div>
+
+                <div id="bmiResult" class="bmi-result"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Altoria. All rights reserved.</p>
+        <p>
+            <a href="../about.html">About</a> |
+            <a href="../contact.html">Contact</a> |
+            <a href="#">Privacy Policy</a>
+        </p>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+
+    <script>
+        // --- BMI Calculator ---
+        document.getElementById("calcBMI").addEventListener("click", function () {
+            const weight = parseFloat(document.getElementById("weight").value);
+            const height = parseFloat(document.getElementById("height").value) / 100; // convert to meters
+            const resultDiv = document.getElementById("bmiResult");
+
+            if (!weight || !height) {
+                resultDiv.textContent = "Please enter valid height and weight values.";
+                resultDiv.style.color = "red";
+                return;
+            }
+
+            const bmi = (weight / (height * height)).toFixed(2);
+            let category = "";
+
+            if (bmi < 18.5) category = "Underweight";
+            else if (bmi < 24.9) category = "Normal weight";
+            else if (bmi < 29.9) category = "Overweight";
+            else category = "Obese";
+
+            resultDiv.textContent = `Your BMI is ${bmi} (${category})`;
+            resultDiv.style.color = "#0a1d37";
+        });
+
+        // --- Health Tip of the Day ---
+        const healthTips = [
+            "Take short breaks every hour to stretch and relax your eyes.",
+            "Start your day with a glass of warm water and lemon.",
+            "Walk at least 5,000 steps daily to boost your heart health.",
+            "Get at least 7–8 hours of sleep every night for mental clarity.",
+            "Avoid skipping breakfast — it fuels your body for the day.",
+            "Laugh often! It reduces stress and boosts your immune system.",
+            "Limit screen time before bed to improve sleep quality.",
+            "Practice deep breathing to lower anxiety and blood pressure.",
+            "Eat more colorful fruits and vegetables for better nutrition.",
+            "Spend time outdoors — sunlight helps your body make vitamin D."
+        ];
+
+        function loadDailyTip() {
+            const randomIndex = Math.floor(Math.random() * healthTips.length);
+            const tipElement = document.getElementById("dailyTip");
+            tipElement.textContent = healthTips[randomIndex];
+        }
+
+        document.addEventListener("DOMContentLoaded", loadDailyTip);
+    </script>
+</body>
+
+</html>

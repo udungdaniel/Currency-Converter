@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get real-time weather updates and forecasts for any city with Altoria.">
+    <title>Weather Forecast | Altoria</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="../index.html">Altoria</a>
+            </div>
+
+            <div class="menu-toggle" id="menu-toggle">☰</div>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../currency/index.html">Currency Converter</a></li>
+                <li><a href="index.html" class="active">Weather Forecast</a></li>
+                <li><a href="../translator/index.html">Translator</a></li>
+                <li><a href="../health/index.html">Health</a></li>
+                <li><a href="../recipes/index.html">Recipes</a></li>
+                <li><a href="../fashion/index.html">Fashion</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="weather-hero">
+            <div class="overlay">
+                <h1>Weather <span>Forecast</span></h1>
+                <p>Stay informed — check live weather updates from anywhere in the world.</p>
+            </div>
+        </section>
+
+        <!-- Weather Search Section -->
+        <section class="weather-section">
+            <div class="container weather-box">
+                <h2>Search Weather by City</h2>
+                <form id="weatherForm">
+                    <div class="form-group">
+                        <label for="city">Enter City Name</label>
+                        <input type="text" id="city" name="city" placeholder="e.g. Lagos, New York, Tokyo" required />
+                    </div>
+                    <button type="submit" class="btn">Check Weather</button>
+                </form>
+
+                <div id="weatherResult" class="weather-result hidden">
+                    <h3 id="cityName">--</h3>
+                    <p id="description">--</p>
+                    <div class="weather-info">
+                        <p><strong>🌡️ Temperature:</strong> <span id="temperature">--</span>°C</p>
+                        <p><strong>💧 Humidity:</strong> <span id="humidity">--</span>%</p>
+                        <p><strong>🌬️ Wind Speed:</strong> <span id="wind">--</span> km/h</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Altoria. All rights reserved.</p>
+        <p>
+            <a href="../about.html">About</a> |
+            <a href="../contact.html">Contact</a> |
+            <a href="#">Privacy Policy</a>
+        </p>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="weather.js"></script>
+</body>
+
+</html>
